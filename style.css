@@ -326,8 +326,8 @@ label {
 
 .productDetails {
   position: absolute;
-  top: 10%;
-  right: 12%;
+  top: 5%;
+  right: 15%;
   width: 40%;
   padding: 50px;
 }
@@ -613,7 +613,7 @@ footer {
   }
 
   .productImg {
-    width: 65%;
+    width: 50%;
     margin-top: 5%;
   }
 
