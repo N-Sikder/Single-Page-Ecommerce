@@ -29,7 +29,7 @@ nav {
 .search {
   display: flex;
   align-items: center;
-  background-color: gray;
+  background-color: white;
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -37,10 +37,15 @@ nav {
 .searchInput {
   border: none;
   background-color: transparent;
+  color: black;
 }
 
 .searchInput::placeholder {
-  color: lightgray;
+  color: gray;
+}
+
+.searchInput:focus-visible {
+  outline: none;
 }
 
 .limitedOffer {
@@ -341,6 +346,7 @@ label {
   font-size: 18px;
   color: gray;
   margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 .colors,
@@ -548,10 +554,147 @@ footer {
 
 /* Responsive  */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  /* Styles for tablet devices */
+  nav {
+    padding: 30px;
+  }
+
+  .navBottom {
+    flex-wrap: wrap;
+  }
+
+  .slider {
+    clip-path: none;
+  }
+
+  .sliderBg {
+    width: 90%;
+    height: 90%;
+  }
+
+  .sliderImg {
+    width: 90%;
+  }
+
+  .sliderTitle {
+    display: none;
+  }
+
+  .sliderPrice {
+    bottom: 0;
+    left: 0;
+    top: unset;
+  }
+
+  .buyButton {
+    top: 0;
+    right: 0;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .featureTitle {
+    font-size: 24px;
+  }
+
+  .featureDesc {
+    width: 60%;
+    font-size: 18px;
+  }
+
+  .product {
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productImg {
+    width: 65%;
+    margin-top: 5%;
+  }
+
+  .productDetails {
+    top: 50%;
+    right: unset;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .productTitle {
+    font-size: 64px;
+  }
+
+  .productDesc {
+    line-height: 1.6;
+  }
+
+  .productButton {
+    margin-top: 10px;
+  }
+
+  .gallery {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .galleryItem {
+    padding: 20px;
+  }
+
+  .galleryTitle {
+    font-size: 36px;
+  }
+
+  .galleryImg {
+    width: 90%;
+    margin: 5px;
+  }
+
+  .newSeason {
+    flex-direction: column;
+  }
+
+  .nsItem:nth-child(2) {
+    padding: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+  }
+
+  .footerLeft {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .footerRight {
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+
+  .fInput {
+    margin-bottom: 5%;
+  }
+
+  .fMenuTitle {
+    font-size: 24px;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 598px) {
   nav {
     padding: 20px;
   }
